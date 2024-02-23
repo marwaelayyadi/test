@@ -10,6 +10,9 @@ jobs:
   terraform:
     name: 'Terraform ${{ matrix.provider }}'
     runs-on: ubuntu-latest
+    environment: 
+      name: dev
+      url: https://github.com
     
     strategy:
       matrix:
